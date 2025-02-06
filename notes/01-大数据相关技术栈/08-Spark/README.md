@@ -2,6 +2,37 @@
 
 
 
+## 床头书篇
+
+![img](https://picx.zhimg.com/80/v2-ee782a828f6841dc9802c1cc7d8868f6_720w.png?source=d16d100b)
+
+
+
+
+
+添加图片注释，不超过 140 字（可选）
+
+1. [【Spark床头书系列】Spark论文原理图解](https://zhuanlan.zhihu.com/p/722280698)
+2. [Spark Dataset DataFrame原理方法示例源码分析](https://zhuanlan.zhihu.com/p/657269142)
+3. [Spark SparkSession由来方法示例源码分析](https://zhuanlan.zhihu.com/p/657336845)
+4. [Spark RDD由来原理方法示例源码详解](https://zhuanlan.zhihu.com/p/657530614)
+5. [Spark SparkContext原理用法示例源码详解](https://zhuanlan.zhihu.com/p/658424016)
+6. [Spark数据类型官网权威详解](https://zhuanlan.zhihu.com/p/660544353) 
+7. [spark RDD 概述用法官网权威资料（建议收藏）](https://zhuanlan.zhihu.com/p/668080616) 
+8. [spark dataset/DataFrame比RDD好在哪些地方？](https://zhuanlan.zhihu.com/p/668696610)
+9. [Spark DataFrame可以读取多少种数据？权威详细示例](https://zhuanlan.zhihu.com/p/668857924)
+10. [Spark生产版本选择说明](https://zhuanlan.zhihu.com/p/678217032)
+11. [如何为 Spark 配置硬件](https://zhuanlan.zhihu.com/p/722160682)
+12. [Spark SchemaUtils方法示例源码分析](https://zhuanlan.zhihu.com/p/658065673)
+13. [Spark breeze中Gamma伽马分布 ChiSquared卡方分布 Gaussian高斯分布 用途方法示例源码分析](https://zhuanlan.zhihu.com/p/663664168)
+14. [spark Statistics ChiSqTest卡方计算原理用法示例源码详解](https://zhuanlan.zhihu.com/p/663179003)
+15. [spark import org.apache.spark.sql.functions._ 示例用法源码权威资料](https://zhuanlan.zhihu.com/p/665414826)
+16. [Spark Partitioner 分区器适用场景示例源码分析HashPartitioner RangePartitioner](https://zhuanlan.zhihu.com/p/665111208) 
+17. [Spark 窄依赖 宽依赖 定义示例源码（你记不住是全网都说错了！！！）](https://zhuanlan.zhihu.com/p/664994199)
+18. [Spark高频面试题100题源码解答【建议收藏】---持续更新中](https://zhuanlan.zhihu.com/p/665111636) 
+
+### 
+
 ## 一、Spark-Core
 
 ### （1）Spark 概述
@@ -1003,6 +1034,53 @@ case (key, num) => {
 ```
 
 
+
+### Spark 原理系列
+
+![img](https://pic1.zhimg.com/80/v2-d65d7bdf925e123ec59a2108c2fbdbbb_720w.png?source=d16d100b)
+
+添加图片注释，不超过 140 字（可选）
+
+1. [【spark原理系列】Spark Dataset DataFrame原理方法示例源码分析](https://zhuanlan.zhihu.com/p/657269142)
+2. [【spark原理系列】Spark SparkSession由来方法示例源码分析](https://zhuanlan.zhihu.com/p/657336845)
+3. [【spark原理系列】Spark RDD由来原理方法示例源码详解](https://zhuanlan.zhihu.com/p/657530614)
+4. [【spark源码系列】DataType原理方法示例源码详解](https://zhuanlan.zhihu.com/p/676450397)
+5. [【spark原理系列】Spark SparkContext原理用法示例源码详解](https://zhuanlan.zhihu.com/p/658424016) 
+6. [【spark原理系列】Spark Window窗口计算原理用法示例源码分析](https://zhuanlan.zhihu.com/p/658865590) 
+7. [【spark原理系列】 broadcast广播原理优缺点示例源码权威讲解](https://zhuanlan.zhihu.com/p/668091893) 
+8. [【spark原理系列】Spark Row原理用法示例源码详解](https://zhuanlan.zhihu.com/p/664490310)
+9. [【Spark原理系列】Accumulator累加器原理场景示例源码详解](https://zhuanlan.zhihu.com/p/686200837) 
+10. [【spark原理系列】Spark matrix 矩阵原理用法示例源码详解CoordinateMatrix RowMatrix IndexedRowMatrix BlockMatrix](https://zhuanlan.zhihu.com/p/662927908) 
+11. [【spark原理系列】Spark ExpressionEncoder场景用法示例源码分析](https://zhuanlan.zhihu.com/p/655172296) 
+12. [【spark原理系列】Spark RowEncoder 源码分析](https://zhuanlan.zhihu.com/p/655172049) 
+13. [【spark原理系列】Spark UserDefinedFunction原理示例方法源码分析](https://zhuanlan.zhihu.com/p/655664530) 
+14. [【spark原理系列】Spark Symbol原理用法示例源码分析](https://zhuanlan.zhihu.com/p/655768129) 
+15. [【spark原理系列】Spark Literal 原理示例源码分析](https://zhuanlan.zhihu.com/p/655768715) 
+16. [【spark原理系列】Spark Catalyst中Expression的原理示例源码详解](https://zhuanlan.zhihu.com/p/655907462) 
+17. [【spark原理系列】Spark Encoders原理示例源码分析](https://zhuanlan.zhihu.com/p/656130676)  
+18. [Spark sql schema StructField中metadata原理用法示例源码分析](https://zhuanlan.zhihu.com/p/657933389) 
+19. [【spark原理系列】Spark Column 原理用法示例源码分析](https://zhuanlan.zhihu.com/p/658946555)
+20. [【spark原理系列】import spark.implicits._ 和import org.apache.spark.sql._ 做了哪些事情](https://zhuanlan.zhihu.com/p/656143802) 
+
+### 性能篇
+
+1. [Spark性能权威调优指南](https://zhuanlan.zhihu.com/p/660579229)
+2. [SparkSQL性能调优官网权威资料](https://zhuanlan.zhihu.com/p/668815239)
+
+### 集群篇
+
+1. [Spark提交任务官网权威指南详解（建议收藏）](https://zhuanlan.zhihu.com/p/660550632)
+2. [Spark 集群模式概述](https://zhuanlan.zhihu.com/p/660537832)
+3. [在YARN上启动Spark任务原理用法官方权威资料](https://zhuanlan.zhihu.com/p/660536199)
+4. [Spark on k8s如何在Kubernetes运行官方权威资料](https://zhuanlan.zhihu.com/p/667436952)
+5. [Spark YARN Cluster和Client两种不同提交模式区别](https://zhuanlan.zhihu.com/p/668292240)
+
+### 流&&PySpark篇
+
+1. [Spark Structured Streaming 编程权威指南](https://zhuanlan.zhihu.com/p/669962566)
+2. [PySpark 安装指南 PySpark DataFrame 、PySpark Pandas Api快速入门权威指南](https://zhuanlan.zhihu.com/p/670390311)
+3. [PySpark Python包管理](https://zhuanlan.zhihu.com/p/680461239)
+4. [Structured Streaming 与 Kafka 集成指南 (适用于 Kafka broker 版本 0.10.0 及以上)](https://zhuanlan.zhihu.com/p/720761514)
 
 ## 二、 Spark-SQL
 
@@ -2147,6 +2225,16 @@ object SparkSqlApp {
   }
 }
 ```
+
+### Spark SQL篇
+
+1. [spark SQL Implicits原理用法示例源码分析](https://zhuanlan.zhihu.com/p/656143802)
+2. [Spark SQL示例用法所有函数权威详解](https://zhuanlan.zhihu.com/p/668823358)
+3. [SparkSQL性能调优官网权威资料](https://zhuanlan.zhihu.com/p/668815239)
+4. [SORT BY、ORDER BY、CLUSTER BY、DISTRIBUTE BY由来原理场景用法示例区别详解](https://zhuanlan.zhihu.com/p/707477557)
+5. [【Spark SQL系列】LATERAL VIEW 由来原理场景用法示例详解](https://zhuanlan.zhihu.com/p/707523462)
+6. [【Spark SQL系列】Pivot 由来原理场景用法示例详解](https://zhuanlan.zhihu.com/p/707526414)
+7. [【Spark SQL系列】unPivot 由来原理场景用法示例详解](https://zhuanlan.zhihu.com/p/707529510)
 
 
 
@@ -3629,6 +3717,68 @@ Job默认都是串行提交运行的，如果Job间没有依赖，可以使用�
 ### （8）SQL
 
 &emsp;SQL选项卡（只有执行了spark SQL查询才会有SQL选项卡）可以查看SQL执行计划的细节，它提供了SQL查询的DAG以及显示Spark如何优化已执行的SQL查询的查询计划。
+
+## 八、Spark ML系列
+
+![img](https://pic1.zhimg.com/80/v2-53d48b7828f09e7de298b72b62317921_720w.png?source=d16d100b)
+
+
+
+
+
+添加图片注释，不超过 140 字（可选）
+
+1. [【Spark ML系列】Spark Word2Vec原理参数示例源码分析详解](https://zhuanlan.zhihu.com/p/676464941)
+2. [【Spark ML系列】GeneralizedLinearRegression广义线性回归原理用法示例源码权威详解](https://zhuanlan.zhihu.com/p/664799929)
+3. [【Spark ML系列】 逻辑回归用法示例源码分析LogisticRegression LogisticRegressionModel](https://zhuanlan.zhihu.com/p/654750019)
+4. [【Spark ML系列】Binarizer场景用法示例源码分析](https://zhuanlan.zhihu.com/p/654970794)
+5. [【Spark ML系列】 Bucketizer分桶场景用法示例源码解析](https://zhuanlan.zhihu.com/p/654970950)
+6. [【Spark ML系列】QuantileDiscretizer分位数的用法示例源码分析](https://zhuanlan.zhihu.com/p/655171798)
+7. [【Spark ML系列】SQLTransformer场景用法示例源码解析](https://zhuanlan.zhihu.com/p/655171977)
+8. [【Spark ML系列】 Kmeans聚类算法由来原理方法示例源码分析](https://zhuanlan.zhihu.com/p/657731139)
+9. [【Spark ML系列】RandomForestClassifier RandomForestClassificationModel随机森林原理示例源码分析](https://zhuanlan.zhihu.com/p/656348822)
+10. [【Spark ML系列】Spark Matrix DenseMatrix SparseMatrix矩阵原理用法操作示例大全](https://zhuanlan.zhihu.com/p/675195254)
+11. [【spark ML系列】Vectors上进行矢量化统计工具示例源码详解](https://zhuanlan.zhihu.com/p/674978447)
+12. [【Spark ML系列】Spark Instrumentation OptionalInstrumentation 功能用法示例源码详解](https://zhuanlan.zhihu.com/p/674900907)
+13. [【Spark ML系列】spark Instance定义场景用法示例源码详解](https://zhuanlan.zhihu.com/p/674900467)
+14. [【Spark ML系列】 ReadWriter原理用途源码分析含逻辑回归调用示例分析](https://zhuanlan.zhihu.com/p/670912016)
+15. [【Spark ML系列】Spark PipelineStage pipeline transformer estimator不能别再‘傻傻’分不清](https://zhuanlan.zhihu.com/p/669137322)
+16. [【Spark ML系列】Spark ML 和 Spark MLlib 中vector向量用途用法互相转换示例中文源码详解](https://zhuanlan.zhihu.com/p/668491528)
+17. [【Spark ML系列】 ProbabilisticClassifier 场景用法示例源码解析](https://zhuanlan.zhihu.com/p/654971069)
+18. [【Spark ML系列】 Params 场景用法示例源码解析](https://zhuanlan.zhihu.com/p/654971247)
+19. [【Spark ML系列】Spark 中Attribute由来原理示例用法源码详解](https://zhuanlan.zhihu.com/p/658042884)
+20. [【Spark ML系列】 ParamValidators方法示例源码分析](https://zhuanlan.zhihu.com/p/658072399)
+21. [【Spark ML系列】 SparseVector原理示例源码分析](https://zhuanlan.zhihu.com/p/656240927)
+22. [【Spark ML系列】FP-Growth PrefixSpan频繁挖掘算法功能用法示例源码论文详解](https://zhuanlan.zhihu.com/p/679931662)
+
+## 九、Spark Graphx系列
+
+![img](https://picx.zhimg.com/80/v2-30d86777dca8e7ff16f424c789954807_720w.png?source=d16d100b)
+
+
+
+
+
+添加图片注释，不超过 140 字（可选）
+
+1. [【Spark graphx 系列】GraphX概述官方权威使用指南](https://zhuanlan.zhihu.com/p/685908467)
+2. [【Spark Graphx 系列】 Graphx Pregel原理方法示例源码论文详解](https://zhuanlan.zhihu.com/p/678378877)
+3. [【Spark Graphx 系列】Pregel PeriodicCheckpointer原理场景示例源码详解](https://zhuanlan.zhihu.com/p/687479963)
+4. [【Spark Graphx 系列】 Graphx GraphOps原理方法示例源码论文详解](https://zhuanlan.zhihu.com/p/678575408)
+5. [【Spark Graphx系列】EdgeRDD原理方法示例源码详解](https://zhuanlan.zhihu.com/p/678529211)
+6. [【Spark Graphx系列】VertexRDD原理方法示例源码详解](https://zhuanlan.zhihu.com/p/678528769)
+7. [【spark graphx系列】EdgeTriplet原理用途用法示例源码分析](https://zhuanlan.zhihu.com/p/678488538)
+8. [【spark graphx系列】EdgeContext原理用途用法示例源码分析](https://zhuanlan.zhihu.com/p/678488451)
+9. [【spark graphx系列】TripletFields原理用途用法示例源码分析](https://zhuanlan.zhihu.com/p/678488401)
+10. [【spark Graphx系列】EdgeDirection原理用途用法示例源码分析](https://zhuanlan.zhihu.com/p/678488218)
+11. [【Spark Graphx 系列】subgraph子图过滤原理场景优化示例详解](https://zhuanlan.zhihu.com/p/686771049)
+12. [【Spark Graphx 系列】图分区策略原理场景示例详解](https://zhuanlan.zhihu.com/p/687128793)
+13. [【Spark Graphx 系列】mask原理场景示例详解](https://zhuanlan.zhihu.com/p/686857518)
+
+
+
+
+
 
 
 
