@@ -1,12 +1,6 @@
 
 
-> 本文由holynull发表在了gitbook上
-> 大家可以点击这里获取更好的阅读体验: https://holynull.gitbooks.io/zookeeper/content/chapter1.html
-
-> zk目前更新到了3.x版本，官网在这里：https://zookeeper.apache.org/doc/current/zookeeperStarted.html
-
-另外推荐文章：
-http://www.importnew.com/23237.html
+> zk目前更新到了3.x版本，官网在这里：https://zookeeper.apache.org/doc/current/zookeeperStarted.html   另外推荐文章：http://www.importnew.com/23237.html
 
 
 ## 简介
@@ -19,7 +13,7 @@ Zookeeper不能让部分失败的问题彻底消失，但是它提供了一些�
 我们采用standalone模式，安装运行一个单独的zookeeper服务。安装前请确认您已经安装了Java运行环境。
 我们去Apache ZooKeeper releases page下载zookeeper安装包，并解压到本地：
 
-```
+```shell
 % tar xzf zookeeper-x.y.z.tar.gz
 ```
 ZooKeeper提供了一些可执行程序的工具，为了方便起见，我们将这些工具的路径加入到PATH环境变量中：

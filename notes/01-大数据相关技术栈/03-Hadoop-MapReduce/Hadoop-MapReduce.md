@@ -35,7 +35,6 @@ MapReduce 作业通过将输入的数据集拆分为独立的块，这些块由 
 这里以词频统计为例进行说明，MapReduce 处理的流程如下：
 
 <div align="center"> <img width="600px" src="../pictures/mapreduceProcess.png"/> </div>
-
 1. **input** : 读取文本文件；
 
 2. **splitting** : 将文件按照行进行拆分，此时得到的 `K1` 行数，`V1` 表示对应行的文本内容；
@@ -51,7 +50,6 @@ MapReduce 编程模型中 `splitting` 和 `shuffing` 操作都是由框架实现
 ## 三、combiner & partitioner
 
 <div align="center"> <img width="600px" src="../pictures/Detailed-Hadoop-MapReduce-Data-Flow-14.png"/> </div>
-
 ### 3.1 InputFormat & RecordReaders 
 
 `InputFormat` 将输出文件拆分为多个 `InputSplit`，并由 `RecordReaders` 将 `InputSplit` 转换为标准的<key，value>键值对，作为 map 的输出。这一步的意义在于只有先进行逻辑拆分并转为标准的键值对格式后，才能为多个 `map` 提供输入，以便进行并行处理。
@@ -69,11 +67,9 @@ MapReduce 编程模型中 `splitting` 和 `shuffing` 操作都是由框架实现
 不使用 combiner 的情况：
 
 <div align="center"> <img  width="600px"  src="../pictures/mapreduce-without-combiners.png"/> </div>
-
 使用 combiner 的情况：
 
 <div align="center"> <img width="600px"  src="../pictures/mapreduce-with-combiners.png"/> </div>
-
 
 
 可以看到使用 combiner 的时候，需要传输到 reducer 中的数据由 12keys，降低到 10keys。降低的幅度取决于你 keys 的重复率，下文词频统计案例会演示用 combiner 降低数百倍的传输量。
@@ -148,7 +144,6 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 <div align="center"> <img  src="../pictures/hadoop-code-mapping.png"/> </div>
 
 
-
 `WordCountMapper` 继承自 `Mappe` 类，这是一个泛型类，定义如下：
 
 ```java
@@ -188,7 +183,6 @@ public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritab
 如下图，`shuffling` 的输出是 reduce 的输入。这里的 key 是每个单词，values 是一个可迭代的数据类型，类似 `(1,1,1,...)`。
 
 <div align="center"> <img  src="../pictures/hadoop-code-reducer.png"/> </div>
-
 ### 4.4 WordCountApp
 
 组装 MapReduce 作业，并提交到服务器运行，代码如下：
@@ -293,7 +287,6 @@ hadoop fs -cat /wordcount/output/WordCountApp/part-r-00000
 <div align="center"> <img  src="../pictures/hadoop-wordcountapp.png"/> </div>
 
 
-
 ## 五、词频统计案例进阶之Combiner
 
 ### 5.1 代码实现
@@ -312,11 +305,9 @@ job.setCombinerClass(WordCountReducer.class);
 没有加入 `combiner` 的打印日志：
 
 <div align="center"> <img  src="../pictures/hadoop-no-combiner.png"/> </div>
-
 加入 `combiner` 后的打印日志如下：
 
 <div align="center"> <img  src="../pictures/hadoop-combiner.png"/> </div>
-
 这里我们只有一个输入文件并且小于 128M，所以只有一个 Map 进行处理。可以看到经过 combiner 后，records 由 `3519` 降低为 `6`(样本中单词种类就只有 6 种)，在这个用例中 combiner 就能极大地降低需要传输的数据量。
 
 
@@ -369,7 +360,6 @@ job.setNumReduceTasks(WordCountDataUtils.WORD_LIST.size());
 执行结果如下，分别生成 6 个文件，每个文件中为对应单词的统计结果：
 
 <div align="center"> <img  src="../pictures/hadoop-wordcountcombinerpartition.png"/> </div>
-
 
 
 

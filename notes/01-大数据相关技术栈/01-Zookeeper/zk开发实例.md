@@ -4,7 +4,7 @@
 我们可以把Zookeeper理解为一个高可用的文件系统。但是它没有文件和文件夹的概念，只有一个叫做znode的节点概念。那么znode即是数据的容器，也是其他节点的容器。（其实znode就可以理解为文件或者是文件夹）我们用父节点和子节点的关系来表示组和成员的关系。那么一个节点代表一个组，组节点下的子节点代表组内的成员.
 如下图所示：
 
-![zk](https://github.com/wangzhiwubigdata/God-Of-BigData/blob/master/zookeeeper/859b65a6868f6b56eadd77a226db5e03.jpeg)
+![img](https://github.com/wangzhiwubigdata/God-Of-BigData/blob/master/zookeeeper/859b65a6868f6b56eadd77a226db5e03.jpeg)
 
 ## 创建组
 
@@ -45,7 +45,7 @@ public class CreateGroup implements Watcher {
      createGroup.close();
      }
  }
- ```
+```
 当main()执行时，首先创建了一个CreateGroup的对象，然后调用connect()方法，通过zookeeper的API与zookeeper服务器连接。创建连接我们需要3个参数：一是服务器端主机名称以及端口号，二是客户端连接服务器session的超时时间，三是Watcher接口的一个实例。Watcher实例负责接收Zookeeper数据变化时产生的事件回调。
 
 在连接函数中创建了zookeeper的实例，然后建立与服务器的连接。建立连接函数会立即返回，所以我们需要等待连接建立成功后再进行其他的操作。我们使用CountDownLatch来阻塞当前线程，直到zookeeper准备就绪。这时，我们就看到Watcher的作用了。我们实现了Watcher接口的一个方法：

@@ -197,7 +197,6 @@ sudo systemctl stop firewalld.service
 
 <div align="center"> <img width="700px" src="../../pictures/hadoop安装验证.png"/> </div>
 
-
 ## 四、Hadoop(YARN)环境搭建
 
 ### 4.1 修改配置
@@ -259,4 +258,5 @@ cp mapred-site.xml.template mapred-site.xml
 
 方式二：查看 Web UI 界面，端口号为 `8088`：
 
-<div align="center"> <img width="700px" src="../../pictures/hadoop-yarn安装验证.png"/> </div>
+<div align="center"> <img width="700px" src="../pictures/hadoop-yarn安装验证.png"/> </div>
+
